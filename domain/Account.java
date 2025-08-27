@@ -31,9 +31,9 @@ public abstract class Account {
     public Person getClient() {
         return client;
     }
-    public void setClient(Person client) {
+    public void setClient(Person client){
         this.client = client;
-    }
+    }
 
 public abstract void deposit();
 public abstract void withdraw();
