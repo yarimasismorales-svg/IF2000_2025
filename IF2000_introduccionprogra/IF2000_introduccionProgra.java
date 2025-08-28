@@ -1,4 +1,5 @@
 package IF2000_introduccionprogra;
+import logic.*;
 
 public class IF2000_introduccionProgra {
 
@@ -32,6 +33,21 @@ public class IF2000_introduccionProgra {
     //ej.ejercicioE();
     //ej.ejercicioF();
     ej.Quiz_3_cuadrado(5);
+
+    Lab_1 lab= new Lab_1();
+    //lab.Ejercicio_1();
+    //lab.Ejercicio_2();
+    //lab.Ejercicio_3();
+    //lab.Ejercicio_4();
+    //lab.Ejercicio_5();
+    //lab.Ejercicio_6();
+    //lab.Ejercicio_7();
+    //lab.Ejercicio_8();
+    //lab.Ejercicio_9();
+    //lab.Ejercicio_10();
+    //lab.Ejercicio_11();
+    //lab.Ejercicio_12();
+    
     }
     
 }
