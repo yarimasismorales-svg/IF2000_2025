@@ -47,6 +47,25 @@ public class IF2000_introduccionProgra {
     //lab.Ejercicio_10();
     //lab.Ejercicio_11();
     //lab.Ejercicio_12();
+
+     Lab2 lab2;
+    lab2 = new Lab2();
+
+    lab2.ejercicio1();
+    lab2.ejercicio2();
+    lab2.ejercicio3();
+    lab2.ejercicio4();
+    lab2.ejercicio5();
+    lab2.ejercicio6();
+    lab2.ejercicio7();
+    lab2.ejercicio8();
+    lab2.ejercicio9();
+    lab2.ejercicio10();
+    lab2.ejercicio11();
+    lab2.ejercicio12();
+    lab2.ejercicio13();
+    lab2.ejercicio14();
+    lab2.ejercicio15();
     
     }
     
