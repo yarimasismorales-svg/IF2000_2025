@@ -58,7 +58,7 @@ private final Scanner scanner;
         System.out.print("Ingrese un número: ");
         int x = scanner.nextInt();
         int resultado = (x > 0) ? x + 5 : (x < 0) ? x * x : 1;
-        System.out.println("El resultado de la función F(x) es: " + resultado);
+        System.out.println("El resultado de la función x es: " + resultado);
     }
 
     public void ejercicio6() {
