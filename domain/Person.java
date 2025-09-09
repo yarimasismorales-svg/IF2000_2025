@@ -52,8 +52,8 @@ public class Person {
     public String toString() {
         return "Person [name=" 
         + name + ", Lastname=" + LastName + ", id=" + id + ", phone=" + phone + ", age=" + age
-                + "]";
-    }
+            +"]";
+}
 
     
 }

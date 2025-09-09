@@ -35,9 +35,9 @@ public abstract class Account {
         this.client = client;
     }
 
-public abstract void deposit();
-public abstract void withdraw();
-public abstract double interesCalculation();
+public abstract void deposit(double amount);
+public abstract void withdraw(double amount);
+public abstract double interestCalculation();
 
 @Override
 public String toString(){

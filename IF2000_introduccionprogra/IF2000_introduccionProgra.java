@@ -1,5 +1,6 @@
 package IF2000_introduccionprogra;
 import logic.*;
+import domain.*;
 
 public class IF2000_introduccionProgra {
 
@@ -22,7 +23,7 @@ public class IF2000_introduccionProgra {
     object
 
     Data
-    */
+  /
     Ejecicios_Semana2_PracticaEnClase ej;
     ej = new Ejecicios_Semana2_PracticaEnClase();
     //ej.Quiz2_A_primos(5);
@@ -48,7 +49,7 @@ public class IF2000_introduccionProgra {
     //lab.Ejercicio_11();
     //lab.Ejercicio_12();
 
-     Lab2 lab2;
+     /*Lab2 lab2;
     lab2 = new Lab2();
 
     lab2.ejercicio1();
@@ -65,7 +66,19 @@ public class IF2000_introduccionProgra {
     lab2.ejercicio12();
     lab2.ejercicio13();
     lab2.ejercicio14();
-    lab2.ejercicio15();
+    lab2.ejercicio15();*/
+
+    Person = new Person ("Edgardo", "Corrales", "1-223-4545","4755545",18);
+
+    SavingAccount account1 = 
+    new SavingAccount("2025-09-04",12,5,  "14974779", 25000, client);
+
+    account1.deposit(3000);
+    System.out.println(account1.toString());
+
+    
+
+
     
     }
     
