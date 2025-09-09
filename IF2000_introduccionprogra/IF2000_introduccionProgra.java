@@ -68,7 +68,7 @@ public class IF2000_introduccionProgra {
     lab2.ejercicio14();
     lab2.ejercicio15();*/
 
-    Person = new Person ("Edgardo", "Corrales", "1-223-4545","4755545",18);
+    Person client = new Person ("Edgardo", "Corrales", "1-223-4545","4755545",18);
 
     SavingAccount account1 = 
     new SavingAccount("2025-09-04",12,5,  "14974779", 25000, client);
