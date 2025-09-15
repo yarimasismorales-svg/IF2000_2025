@@ -1,4 +1,4 @@
-package domain;
+package domainlab3;
 
 public class Person {
     //Atributes

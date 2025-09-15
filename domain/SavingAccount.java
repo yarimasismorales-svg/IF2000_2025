@@ -1,5 +1,8 @@
 package domain;
 
+import domainlab3.Account;
+import domainlab3.Person;
+
 public class SavingAccount extends Account{
     
     //Atributes

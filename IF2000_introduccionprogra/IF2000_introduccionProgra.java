@@ -1,6 +1,8 @@
 package IF2000_introduccionprogra;
+import domain.Person;
+import domain.SavingAccount;
+import domainlab3.*;
 import logic.*;
-import domain.*;
 
 public class IF2000_introduccionProgra {
 
@@ -70,8 +72,7 @@ public class IF2000_introduccionProgra {
 
     Person client = new Person ("Edgardo", "Corrales", "1-223-4545","4755545",18);
 
-    SavingAccount account1 = 
-    new SavingAccount("2025-09-04",12,5,  "14974779", 25000, client);
+    SavingAccount account1 = new SavingAccount("2025-09-04",12,5,  "14974779", 25000, client);
 
     account1.deposit(3000);
     System.out.println(account1.toString());

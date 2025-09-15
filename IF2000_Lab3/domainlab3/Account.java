@@ -1,4 +1,7 @@
-package domain;
+
+package domainlab3;
+
+import domainlab3.Person;
 
 public abstract class Account {
     // Atributos

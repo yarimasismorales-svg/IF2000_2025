@@ -1,5 +1,7 @@
 package domain;
 
+import domainlab3.Person;
+
 public abstract class Account {
     // Atributos
     private String accountNumber;
