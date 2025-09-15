@@ -77,19 +77,18 @@ public class SavingAccount extends Account {
     }// endInterestCalculation
 
     @Override
-    public String toString() {
-        String result = "\nAccount Type: SAVING ACCOUNT"
-                + "\n---------------------------------"
-                + "\n Initial date of account: " + this.getInitialDate()
-                + "\n Months of saving: " + this.getMonths()
-                + "\n Interest: " + this.getInterest()
-                + "\n Gained Interest: " + ((this.getMonths()
-                        * super.getBalance() / 100)
-                        + this.getInterest())
-                + "\n Balance after interest: " + this.getBalance() + ((this.getMonths()
-                        * super.getBalance() / 100)
-                        + this.getInterest());
-        return super.toString() + result;
-    }// endOfToString()
+public String toString() {
+    double interestEarned = getBalance() * getInterest() * getMonths() / 100;
+    double balanceWithInterest = getBalance() + interestEarned;
 
-}// endClass
+    String result = "\nAccount Type: SAVING ACCOUNT"
+            + "\n---------------------------------"
+            + "\nInitial date of account: " + this.getInitialDate()
+            + "\nMonths of saving: " + this.getMonths()
+            + "\nInterest rate: " + this.getInterest() + "%"
+            + "\nGained interest: " + interestEarned
+            + "\nBalance after interest: " + balanceWithInterest;
+
+    return super.toString() + result;
+}
+}
