@@ -2,6 +2,7 @@ package domainlab3;
 
 import domainlab3.Account;
 import domainlab3.Person;
+import domainlab3.LogEntry;
 
 public class SavingAccount extends Account {
 
