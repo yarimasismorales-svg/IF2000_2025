@@ -1,4 +1,5 @@
 package domainlab3;
+import domainlab3.Person;
 
 public class TestProgram {
     public static void main(String[] args) {
@@ -27,12 +28,12 @@ public class TestProgram {
 
         // Print logs
         System.out.println("\nLogs for SA:");
-        for (Log log : sa.getLogs()) {
+        for (LogEntry log : sa.getLogs()) {
             System.out.println(log);
         }
 
         System.out.println("\nLogs for CA:");
-        for (Log log : ca.getLogs()) {
+        for (LogEntry log : ca.getLogs()) {
             System.out.println(log);
         }
     }
