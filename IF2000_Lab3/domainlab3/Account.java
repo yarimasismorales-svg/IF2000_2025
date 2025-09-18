@@ -1,13 +1,15 @@
 
 package domainlab3;
 
-import domainlab3.Person;
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class Account {
     // Atributos
     private String accountNumber;
     private double balance;
     private Person client;
+    private List<LogEntry> logs = new ArrayList<>();
 
     // Constructor
     public Account() {
@@ -17,6 +19,18 @@ public abstract class Account {
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.client = client;
+    }
+    public void addLog(String eventType) {
+        LogEntry e = new LogEntry(eventType, this);
+        logs.add(e);
+    }
+
+    public void addLog(LogEntry entry) {
+        if (entry != null) logs.add(entry);
+    }
+
+    public List<LogEntry> getLogs() {
+        return logs;
     }
     // Getters y Setters
     public String getAccountNumber() {
@@ -42,18 +56,17 @@ public abstract void deposit(double amount);
 public abstract void withdraw(double amount);
 public abstract double interestCalculation();
 
-@Override
-public String toString(){
-    String result = "\nBANK ACCOUNT INFORMATIONM/n"+
-    "Account Number: " + this.getAccountNumber() + 
-    "/n"
-     +
-    "Balance: " + this.getBalance()
-    +  "\n"
-    +"\nAccount owner: " + this.getClient().toString();
+    @Override
+    public String toString(){
+        String result = "\nBANK ACCOUNT INFORMATION\n"+
+                "Account Number: " + this.getAccountNumber() +
+                "\n" +
+                "Balance: " + this.getBalance() +
+                "\n" +
+                "\nAccount owner: " + (this.getClient() != null ? this.getClient().toString() : "<no client>");
 
-    return result;
-}
+        return result;
+    }
 }
 
 
