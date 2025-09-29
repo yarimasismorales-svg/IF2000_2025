@@ -20,14 +20,14 @@ public class CheckingAccount extends Account {
     @Override
     public void deposit(double amount) {
         setBalance(getBalance() + amount);
-        addLog("deposit");
+       // addLog("deposit");
     }
 
     @Override
     public void withdraw(double amount) {
         if (amount <= getBalance()) {
             setBalance(getBalance() - amount);
-            addLog("withdraw");
+            //addLog("withdraw");
         } else {
             System.out.println("Not enough balance.");
         }
