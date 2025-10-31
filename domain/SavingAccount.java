@@ -1,5 +1,11 @@
 package domain;
 
+<<<<<<< HEAD
+=======
+import domainlab3.Account;
+import domainlab3.Person;
+
+>>>>>>> cb36be8a6016844de916975613a3aa672c9c88cb
 public class SavingAccount extends Account{
     
     //Atributes
@@ -60,7 +66,11 @@ public class SavingAccount extends Account{
     }
 
     @Override
+<<<<<<< HEAD
     public double interestcalculation() {
+=======
+    public double interestCalculation() {
+>>>>>>> cb36be8a6016844de916975613a3aa672c9c88cb
         
         double total;
         total = this.getMonths()
